@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+<html lang="ja">
+
+{% block title %}食生活登録画面 | Private Sleepin {% endblock %}
+
+{% block head %}
+
+<!-- css -->
+<link rel="stylesheet" href="{% static 'css/meal.css' %}">
+
+{% endblock %}
+
+<!--<body>-->
+
+{% block contents %}
+<div class="registermeal_menu">
+    <div class="registermeal_item">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <table class="table">
+                {{ form.media }}
+                {{ form.as_table }}
+            </table>
+            <div class="button">
+                <button type="submit" onclick="location.href={% url 'sleepin:meal_record' %}">キャンセル</button>
+                <button type="submit">登録</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+
+<!--</body>-->
+</html>

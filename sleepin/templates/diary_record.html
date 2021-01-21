@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+<html lang="ja">
+
+{% block title %}日記記録画面 | Private Sleepin {% endblock %}
+
+{% block active_diary_list %}active{% endblock %}
+
+{% block head %}
+
+<!-- css -->
+<link rel="stylesheet" href="{% static 'css/diary.css' %}">
+
+{% endblock %}
+
+<!--<body>-->
+
+{% block contents %}
+    <ul class="diarymenu">
+        <li class="diary_item"><a href="{% url 'sleepin:diary_register' %}"><img src="{% static 'img/えんぴつのアイコン素材.png' %}"></a><br />日記</li>
+    </ul>
+
+<!--</body>-->
+{% endblock %}
+</html>

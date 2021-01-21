@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+<html lang="ja">
+
+{% block title %}睡眠時間記録画面 | Private Sleepin {% endblock %}
+
+{% block head %}
+
+<!-- css -->
+<link rel="stylesheet" href="{% static 'css/sleep.css' %}">
+
+{% endblock %}
+
+<!--<body>-->
+
+{% block contents %}
+
+<ul class="sleepmenu">
+    <li class="sleep_item"><a href="{% url 'sleepin:sleeptime_register' %}"><img src="{% static 'img/アラーム時計のアイコン.png' %}"></a><br/>睡眠時間</li>
+</ul>
+
+{% endblock %}
+
+<!--</body>-->
+</html>

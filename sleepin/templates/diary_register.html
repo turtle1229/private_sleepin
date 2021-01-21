@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+<html lang="ja">
+
+{% block title %}日記登録画面 | Private Sleepin {% endblock %}
+
+{% block head %}
+<!-- css -->
+<link rel="stylesheet" href="{% static 'css/diary.css' %}">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+{% endblock %}
+
+<!--<body>-->
+
+{% block contents %}
+<div class="registerdiary_menu">
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <table class="table">
+            {{ form.media }}
+            {{ form.as_table }}
+        </table>
+        <div class="button">
+            <button type="submit" onclick="location.href={% url 'sleepin:diary_record' %}">キャンセル</button>
+            <button type="submit">登録</button>
+        </div>
+    </form>
+
+</div>
+{% endblock %}
+
+<!--</body>-->
+</html>

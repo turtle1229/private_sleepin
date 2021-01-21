@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+<html lang="ja">
+
+{% block title %}日記詳細 | Private Sleepin {% endblock %}
+
+{% block active_login %}active{% endblock %}
+
+{% block head %}
+
+<!-- css -->
+<link rel="stylesheet" href="{% static 'css/diary-detail.css' %}">
+
+{% endblock %}
+
+<!--<body>-->
+
+{% block contents %}
+<div class="container">
+    <div class="my-div-style w-100">
+        <div class="row">
+            <table>
+                <tr>
+                    <td>タイトル</td>
+                    <td class="object">{{ object.title }}</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+
+        <div class="row">
+            <table>
+                <tr>
+                    <td>本文</td>
+                    <td class="object">{{ object.content|linebreaksbr }}</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+
+        <div class="row">
+            <table>
+                <tr>
+                    <td>写真</td>
+                    <td class="object">
+                        {% if object.photo1 %}
+                        <img src="{{ object.photo1.url }}" width="200" height="200"/>
+                        {% endif %}
+                    </td>
+                    <td class="object">
+                        {% if object.photo2 %}
+                        <img src="{{ object.photo2.url }}" width="200" height="200"/>
+                        {% endif %}
+                    </td>
+                    <td class="object">
+                        {% if object.photo3 %}
+                        <img src="{{ object.photo3.url }}" width="200" height="200"/>
+                        {% endif %}
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+
+        <div class="row">
+            <table>
+                <tr>
+                    <td>作成日時</td>
+                    <td class="object">{{ object.created_at }}</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+
+        <div class="row">
+            <table>
+                <tr>
+                    <td>更新日時</td>
+                    <td class="object">{{ object.updated_at }}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock %}
+<!--</body>-->
+</html>

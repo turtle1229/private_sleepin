@@ -1,0 +1,36 @@
+#header {
+    margin: 0px 0px 45px;
+}
+
+.container {
+    position: relative;
+    left: 8%;
+    right: 0;
+    list-style: none;
+    overflow: hidden;
+    text-align: left;
+    display: table;
+    width: 92%;
+    height: 500px;
+    flex: 1;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+table {
+    width: 70%;
+    table-layout: fixed;
+}
+
+table td {
+    padding: 20px 0;
+    word-break : break-all;
+}
+
+.object {
+    font-weight: normal;
+}
+
+hr {
+    width: 1600px;
+}

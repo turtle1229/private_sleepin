@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+<html lang="ja">
+
+{% block title %}運動記録画面 | Private Sleepin {% endblock %}
+
+{% block head %}
+
+<!-- css -->
+<link rel="stylesheet" href="{% static 'css/health.css' %}">
+
+{% endblock %}
+
+<!--<body>-->
+
+{% block contents %}
+    <ul class="healthmenu">
+        <li class="health_item"><a href="{% url 'sleepin:health_register' %}"><img src="{% static 'img/フィットネスのピクトグラム1.png' %}"></a><br />運動</li>
+    </ul>
+{% endblock %}
+
+<!--</body>-->
+</html>

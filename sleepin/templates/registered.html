@@ -1,75 +1,58 @@
 <!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+{% load static %}
+
 <html lang="ja">
 
-<head>
-    <meta charset="UTF-8">
-    <title>登録完了画面</title>
-    <script src="src/js/jquery-3.5.1.min.js"></script>
-    <link rel="stylesheet" href="src/css/sleep.css">
-    <link rel="stylesheet" href="src/css/top.css">
-</head>
+{% block title %}登録完了画面 | Private Sleepin {% endblock %}
 
-<body>
-    <!-- header -->
-    <header id="header" role="banner" itemscope="itemscope">
-        <div class="wrap">
+{% block head %}
 
-        </div>
-        <div class="top">
-            <a href="top.html"><img src="../img/Icon dog.png"></a>
-        </div>
-    </header>
+<!-- js -->
+<script src="{% static 'js/jquery-3.5.1.min.js' %}"></script>
 
-    <script>
-        function getImage() {
-            //画像ファイル名を配列で保持
-            var image = ['../img/イカアイコン4.png', '../img/ウミガメのアイコン.png', '../img/ゴールデンレトリバーのピクト2.png', '../img/パグのアイコン.png', '../img/ホルスタインの無料イラスト2.png', '../img/リスのアイコンですたい。.png', '../img/亀の無料素材4.png', '../img/招き猫のアイコン.png', '../img/肉球のアイコン3.png', '../img/猫の無料アイコン1.png'];
+<!-- css -->
+<link rel="stylesheet" href="{% static 'css/top.css' %}">
+<link rel="stylesheet" href="{% static 'css/registered.css' %}">
+{% endblock %}
 
-            //ランダムで画像ファイルを取得して表示する
-            var obj = document.getElementById("im1");
-            var a = Math.floor(Math.random() * image.length);
-            obj.src = image[a];
-        }
-    </script>
+<!--<body>-->
 
+{% block contents %}
 
-
-    <div class="registered_time">
-        <p>登録しました！</p>
-        <div class="randomImg">
-            <script type="text/javascript">
+<div class="registered">
+    <p>登録しました！</p>
+    <div class="randomImg">
+        <script type="text/javascript">
                 var imglist = new Array(
-                    "../img/イカアイコン4.png",
-                    "../img/ウミガメのアイコン.png",
-                    "../img/ゴールデンレトリバーのピクト2.png",
-                    "../img/パグのアイコン.png",
-                    "../img/ホルスタインの無料イラスト2.png",
-                    "../img/リスのアイコンですたい。.png",
-                    "../img/亀の無料素材4.png",
-                    "../img/招き猫のアイコン.png",
-                    "../img/肉球のアイコン3.png",
-                    "../img/猫の無料アイコン1.png",
-                    "../img/無料のプレゼントイラスト.png",
-                    "../img/雪だるまのフリーイラスト5.png",
-                    "../img/金魚のアイコン素材.png",
-                    "../img/トナカイのの無料アイコン1.png",
-                    "../img/サンタクロースのフリーイラスト7.png",
-                    "../img/キャンディケインアイコン5.png"
+                    "{% static 'img/イカアイコン4.png' %}",
+                    "{% static 'img/ウミガメのアイコン.png' %}",
+                    "{% static 'img/ゴールデンレトリバーのピクト2.png' %}",
+                    "{% static 'img/パグのアイコン.png' %}",
+                    "{% static 'img/ホルスタインの無料イラスト2.png' %}",
+                    "{% static 'img/リスのアイコンですたい。.png' %}",
+                    "{% static 'img/亀の無料素材4.png' %}",
+                    "{% static 'img/招き猫のアイコン.png' %}",
+                    "{% static 'img/肉球のアイコン3.png' %}",
+                    "{% static 'img/猫の無料アイコン1.png' %}",
+                    "{% static 'img/無料のプレゼントイラスト.png' %}",
+                    "{% static 'img/雪だるまのフリーイラスト5.png' %}",
+                    "{% static 'img/金魚のアイコン素材.png' %}",
+                    "{% static 'img/トナカイのの無料アイコン1.png' %}",
+                    "{% static 'img/サンタクロースのフリーイラスト7.png' %}",
+                    "{% static 'img/キャンディケインアイコン5.png' %}",
                 );
                 var selectnum = Math.floor(Math.random() * imglist.length);
                 var output = "<img src=" + imglist[selectnum] + ">";
                 document.write(output);
-            </script>
-        </div>
-        <a href="top.html"><img class="cross" src="../img/Icon metro-cross.png"></a>
-    </div>
 
-    <!-- footer -->
-    <footer id="footer">
-        <ul class="footer_menu">
-            <li>TOP</li>
-            <li>ABOUT</li>
-            <li>GUIDE</li>
-        </ul>
-    </footer>
-</body>
+        </script>
+    </div>
+    <a href="{% url 'sleepin:top' %}"><img class="cross" src="{% static 'img/Icon metro-cross.png' %}"></a>
+</div>
+
+<!--</body>-->
+{% endblock %}
+</html>

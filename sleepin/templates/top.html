@@ -1,45 +1,31 @@
 <!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+{% load static %}
+
 <html lang="ja">
 
-<head>
-    <meta charset="UTF-8">
-    <title>sleepinトップ画面</title>
-    <!-- js -->
-    <script src="../../static/js/jquery-3.5.1.min.js"></script>
+{% block title %}睡眠管理アプリケーション | Private Sleepin {% endblock %}
 
-    <!-- css -->
-    <link rel="stylesheet" href="../../static/css/top.css">
-</head>
+<!--<head>-->
+<!--</head>-->
 
-<body>
+<!--<body>-->
 
-    <!-- header -->
-    <header id="header" role="banner" itemscope="itemscope">
-        <div class="wrap">
-
-        </div>
-        <div class="top">
-            <a href="top.html"><img src="../../static/img/Icon dog.png"></a>
-        </div>
-    </header>
+{% block contents %}
 
     <ul class="topmenu">
-        <li class="top_item">睡眠時間<br /><a href="record_time.html"><img src="../../static/img/top_sleeptime.png"></a></li>
-        <li class="top_item">食生活<br /><a href="record_meal.html"><img src="../../static/img/top_meal.png"></a></li>
-        <li class="top_item">ヘルス<br /><a href="record_health.html"><img class="health" src="../../static/img/top_health.png"></a>
+        <li class="top_item">睡眠時間<br /><a href="{% url 'sleepin:sleeptime_record' %}"><img src="{% static 'img/top_sleeptime.png' %}"></a></li>
+        <li class="top_item">食生活<br /><a href="{% url 'sleepin:meal_record' %}"><img src="{% static 'img/top_meal.png' %}"></a></li>
+        <li class="top_item">ヘルス<br /><a href="{% url 'sleepin:health_record' %}"><img class="health" src="{% static 'img/top_health.png' %}"></a>
         </li>
-        <li class="top_item">日記<br /><a href="record_diary.html"><img class="diary" src="../../static/img/top_diary.png"></a>
+        <li class="top_item">日記<br /><a href="{% url 'sleepin:diary_record' %}"><img class="diary" src="{% static 'img/top_diary.png' %}"></a>
         </li>
     </ul>
 
-    <!-- footer -->
-    <footer id="footer">
-        <ul class="footer_menu">
-            <li>TOP</li>
-            <li>ABOUT</li>
-            <li>GUIDE</li>
-        </ul>
-    </footer>
-</body>
+{% endblock %}
+
+<!--</body>-->
 
 </html>
