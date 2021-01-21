@@ -18,18 +18,19 @@
 
 {% block contents %}
 <div class="registerdiary_menu">
-    <form method="POST" enctype="multipart/form-data">
-        {% csrf_token %}
-        <table class="table">
-            {{ form.media }}
-            {{ form.as_table }}
-        </table>
-        <div class="button">
-            <button type="submit" onclick="location.href={% url 'sleepin:diary_record' %}">キャンセル</button>
-            <button type="submit">登録</button>
-        </div>
-    </form>
-
+    <div class="registerdiary_item">
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <table class="table">
+                {{ form.media }}
+                {{ form.as_table }}
+            </table>
+            <div class="button">
+                <a class="cancel" href="{% url 'sleepin:diary_record' %}">キャンセル</a>
+                <button class="regist" type="submit">登録</button>
+            </div>
+        </form>
+    </div>
 </div>
 {% endblock %}
 

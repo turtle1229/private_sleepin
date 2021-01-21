@@ -45,25 +45,14 @@ input {
     border-spacing: 15px;
 }
 
-button {
+.cancel, .regist {
     font-size: 15px;
-    padding: 5px 5px;
+    padding: 10px 10px;
     font-weight: bold;
     width: 88px;
-    height: 40px;
     background-color: #349996;
     color: #fff;
     border-style: none;
     cursor: pointer;
-    margin: 20px 25px;
-}
-
-button:focus {
-    outline: 0;
-}
-
-button:active {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);/*下に動く*/
-    border-bottom: none;/*線を消す*/
+    margin: 20px 35px;
 }

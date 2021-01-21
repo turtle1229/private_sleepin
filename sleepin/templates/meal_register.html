@@ -27,12 +27,13 @@
                 {{ form.as_table }}
             </table>
             <div class="button">
-                <button type="submit" onclick="location.href={% url 'sleepin:meal_record' %}">キャンセル</button>
-                <button type="submit">登録</button>
+                <a class="cancel" href="{% url 'sleepin:meal_record' %}">キャンセル</a>
+                <button class="regist" type="submit">登録</button>
             </div>
         </form>
     </div>
 </div>
+
 {% endblock %}
 
 <!--</body>-->

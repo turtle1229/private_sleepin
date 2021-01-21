@@ -22,52 +22,44 @@
     margin: 15px;
 }
 
-#calendar {
-    height: 30px;
-    width: 30%;
-    margin: 50px;
-}
-
 .registerdiary_menu {
+    display: table-cell;
     text-align: center;
     flex: 1;
 }
 
-.registerdiary_menu p {
-    font-weight: bold;
-    font-size: 20px;
+.registerdiary_item {
+    margin: 90px;
 }
 
-.registerdiary_menu textarea {
-    width: 50%;
-    font-size: 20px;
-    text-align: center;
-    margin: 10px;
+input {
+    width: 350px;
+    height: 30px;
+    font-size: 18px;
 }
 
-button {
+textarea {
+    width: 350px;
+    height: 150px;
+    font-size: 18px;
+}
+
+.table {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+    border-spacing: 15px;
+}
+
+.cancel, .regist {
     font-size: 15px;
-    padding: 5px 5px;
+    padding: 10px 10px;
     font-weight: bold;
-    width: 95px;
-    height: 40px;
+    width: 88px;
     background-color: #349996;
     color: #fff;
     border-style: none;
     cursor: pointer;
-    margin: 60px;
-}
-
-button:focus {
-    outline: 0;
-}
-
-button:active {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);/*下に動く*/
-    border-bottom: none;/*線を消す*/
-}
-
-.button {
-    margin: 30px;
+    margin: 20px 35px;
 }

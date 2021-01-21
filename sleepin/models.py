@@ -50,7 +50,7 @@ class Meal(models.Model):
         ('間食', '間食'),
     ]
     meal = models.CharField(verbose_name='食事', choices=MEAL_CHOICES, max_length=30, default='')
-    meal_menu = models.TextField(verbose_name='食事内容', blank=True, null=True)
+    meal_menu = models.CharField(verbose_name='食事内容', max_length=40)
 
     class Meta:
         verbose_name_plural = 'Meal'
@@ -70,7 +70,7 @@ class Health(models.Model):
         ('ストレッチ', 'ストレッチ'),
     ]
     health = models.CharField(verbose_name='運動', choices=HEALTH_CHOICES, max_length=30, default='')
-    health_menu = models.TextField(verbose_name='運動内容', blank=True, null=True)
+    health_menu = models.CharField(verbose_name='運動内容', max_length=40)
 
     class Meta:
         verbose_name_plural = 'Health'

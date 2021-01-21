@@ -6,7 +6,6 @@ from .models import Sleeptime
 from .models import Meal
 from .models import Health
 
-
 admin.site.register(Diary)
 
 admin.site.register(Sleeptime)

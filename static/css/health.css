@@ -35,19 +35,19 @@
 input {
     width: 350px;
     height: 23px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 textarea {
     width: 350px;
     height: 23px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 select {
     width: 350px;
-    height: 25px;
-    font-size: 20px;
+    height: 23px;
+    font-size: 18px;
 }
 
 .table {
@@ -58,25 +58,14 @@ select {
     border-spacing: 15px;
 }
 
-button {
+.cancel, .regist {
     font-size: 15px;
-    padding: 5px 5px;
+    padding: 10px 10px;
     font-weight: bold;
     width: 88px;
-    height: 40px;
     background-color: #349996;
     color: #fff;
     border-style: none;
     cursor: pointer;
     margin: 20px 35px;
-}
-
-button:focus {
-    outline: 0;
-}
-
-button:active {
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);/*下に動く*/
-    border-bottom: none;/*線を消す*/
 }
