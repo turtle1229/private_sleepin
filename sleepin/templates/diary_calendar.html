@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+{% extends 'base_calendar.html' %}
+
+{% load static %}
+
+<html lang="ja">
+
+{% block title %}日記履歴カレンダー | Private Sleepin {% endblock %}
+
+{% block head %}
+<link href="{% static 'css/calendar.css' %}" rel="stylesheet">
+{% endblock %}
+
+<!--<body>-->
+
+{% block contents %}
+    <div class="main">
+        <div class="clearfix">
+            <a class="btn btn-info left" href="{% url 'sleepin:diary_calendar' %}?{{ prev_month }}"> 前月 </a>
+            <a class="btn btn-info right" href="{% url 'sleepin:diary_calendar' %}?{{ next_month }}"> 次月 </a>
+        </div>
+        {{ calendar }}
+    </div>
+{% endblock %}
+
+<!--</body>-->
+</html>

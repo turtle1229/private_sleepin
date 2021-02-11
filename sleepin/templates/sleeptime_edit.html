@@ -6,9 +6,7 @@
 
 <html lang="ja">
 
-{% block title %}日記編集 | Private Sleepin {% endblock %}
-
-{% block active_diary_list %}active{% endblock %}
+{% block title %}睡眠時間編集 | Private Sleepin {% endblock %}
 
 {% block head %}
 
@@ -28,7 +26,7 @@
                 {{ form.as_table }}
             </table>
             <div class="button">
-                <a class="cancel" href="{% url 'sleepin:diary_detail' object.pk %}">キャンセル</a>
+                <a class="cancel" href="{% url 'sleepin:sleeptime_detail' object.pk %}">キャンセル</a>
                 <button class="edit" type="submit">編集</button>
             </div>
         </form>

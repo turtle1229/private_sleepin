@@ -6,7 +6,7 @@
 
 <html lang="ja">
 
-{% block title %}運動登録画面 | Private Sleepin {% endblock %}
+{% block title %}運動削除 | Private Sleepin {% endblock %}
 
 {% block head %}
 
@@ -20,19 +20,17 @@
 {% block contents %}
 <div class="container">
     <div class="row">
-        <form method="POST" enctype="multipart/form-data">
+        <form method="POST">
             {% csrf_token %}
-            <table class="table">
-                {{ form.media }}
-                {{ form.as_table }}
-            </table>
+            <p>本当に削除しますか？</p>
             <div class="button">
-                <a class="cancel" href="{% url 'sleepin:health_record' %}">キャンセル</a>
-                <button class="regist" type="submit">登録</button>
+                <button class="delete" type="submit">削除</button>
+                <a class="cancel" href="{% url 'sleepin:health_detail' object.pk %}">キャンセル</a>
             </div>
         </form>
     </div>
 </div>
+
 {% endblock %}
 
 <!--</body>-->

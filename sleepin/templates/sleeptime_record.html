@@ -11,7 +11,7 @@
 {% block head %}
 
 <!-- css -->
-<link rel="stylesheet" href="{% static 'css/sleep.css' %}">
+<link rel="stylesheet" href="{% static 'css/main.css' %}">
 
 {% endblock %}
 
@@ -19,9 +19,19 @@
 
 {% block contents %}
 
-<ul class="sleepmenu">
-    <li class="sleep_item"><a href="{% url 'sleepin:sleeptime_register' %}"><img src="{% static 'img/アラーム時計のアイコン.png' %}"></a><br/>睡眠時間</li>
-</ul>
+<div class="container">
+    <div class="row">
+        <li class="calendar">
+            <p>カレンダー</p>
+            <a href="{% url 'sleepin:sleeptime_calendar' %}"><img src="{% static 'img/カレンダーのフリーアイコン2.png' %}"></a>
+        </li>
+        <ul class="menu">
+            <li class="item">
+                <a href="{% url 'sleepin:sleeptime_register' %}"><img src="{% static 'img/アラーム時計のアイコン.png' %}"></a><br/>睡眠時間
+            </li>
+        </ul>
+    </div>
+</div>
 
 {% endblock %}
 

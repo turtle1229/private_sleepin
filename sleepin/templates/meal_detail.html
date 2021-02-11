@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+<html lang="ja">
+
+{% block title %}食事詳細 | Private Sleepin {% endblock %}
+
+{% block active_login %}active{% endblock %}
+
+{% block head %}
+
+<!-- css -->
+<link rel="stylesheet" href="{% static 'css/detail.css' %}">
+
+{% endblock %}
+
+<!--<body>-->
+
+{% block contents %}
+<div class="container">
+    <div class="my-div-style w-100">
+        <div class="row">
+            <table>
+                <tr>
+                    <td>日付</td>
+                    <td class="object">{{ object.create_date }}</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+
+        <div class="row">
+            <table>
+                <tr>
+                    <td>カテゴリ</td>
+                    <td class="object">{{ object.meal }}</td>
+                </tr>
+            </table>
+        </div>
+        <hr>
+
+        <div class="row">
+            <table>
+                <tr>
+                    <td>食事内容</td>
+                    <td class="object">{{ object.meal_menu }}</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="button">
+            <a class="edit" href="{% url 'sleepin:meal_edit' object.pk %}">編集</a>
+            <a class="delete" href="{% url 'sleepin:meal_delete' object.pk %}">削除</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+<!--</body>-->
+</html>

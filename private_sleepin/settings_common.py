@@ -164,3 +164,7 @@ ACCOUNT_LOGOUT_ON_GET = True
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 MEDIA_URL = '/media/'
+
+#バックアップバッチ用
+BACKUP_PATH = 'backup/'
+NUM_SAVED_BACKUP = 30

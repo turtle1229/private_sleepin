@@ -11,7 +11,7 @@
     text-align: left;
     display: table;
     width: 92%;
-    height: 500px;
+    height: 550px;
     flex: 1;
     font-weight: bold;
     font-size: 20px;
@@ -32,5 +32,21 @@ table td {
 }
 
 hr {
-    width: 1600px;
+    width: 1300px;
+}
+
+.cancel, .regist, .edit, .delete {
+    font-size: 15px;
+    padding: 10px 10px;
+    font-weight: bold;
+    width: 88px;
+    background-color: #349996;
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+    margin: 20px 35px;
+}
+
+.edit {
+    margin: 0;
 }

@@ -21,32 +21,27 @@
 <body>
 <!-- header -->
 <header id="header" role="banner" itemscope="itemscope">
-    <div class="wrap">
-        <div class="top">
-            <a href="{% url 'sleepin:top' %}"><img src="{% static 'img/Icon dog.png' %}"></a>
-        </div>
-        <ul class="header_menu">
-            <li>ABOUT</li>
-            <li>
-                <a href="{% url 'account_login' %}">LOGIN</a>
-            </li>
-            {% if user.is_authenticated %}
-            <li>
-                <a href="{% url 'sleepin:diary_list' %}">日記一覧</a>
-            </li>
-            {% endif %}
-            <li>Calendar</li>
-            <li>HELP</li>
-            {% if user.is_authenticated %}
-            <li>
-                <a href="{% url 'account_logout' %}">ログアウト</a>
-            </li>
-            {% endif %}
-        </ul>
+    <div class="top">
+        <a href="{% url 'sleepin:top' %}"><img src="{% static 'img/Icon dog.png' %}"></a>
     </div>
+    <ul class="header_menu">
+        <li>
+            <a href="{% url 'account_login' %}">ログイン</a>
+        </li>
+        {% if user.is_authenticated %}
+        <li>
+            <a href="{% url 'sleepin:diary_list' %}">日記一覧</a>
+        </li>
+        {% endif %}
+        {% if user.is_authenticated %}
+        <li>
+            <a href="{% url 'account_logout' %}">ログアウト</a>
+        </li>
+        {% endif %}
+    </ul>
 </header>
 
-{% block contents%}{% endblock %}
+{% block contents %}{% endblock %}
 
 <!-- footer -->
 <footer id="footer">
@@ -55,6 +50,7 @@
         <li>ABOUT</li>
         <li>HELP</li>
     </ul>
+    <small>Copyright (c) 睡眠管理アプリケーションSleepin All Rights Reserved.</small>
 </footer>
 
 </body>

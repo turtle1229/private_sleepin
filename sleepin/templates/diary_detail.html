@@ -13,7 +13,7 @@
 {% block head %}
 
 <!-- css -->
-<link rel="stylesheet" href="{% static 'css/diary-detail.css' %}">
+<link rel="stylesheet" href="{% static 'css/detail.css' %}">
 
 {% endblock %}
 
@@ -84,8 +84,13 @@
                 </tr>
             </table>
         </div>
+        <div class="button">
+            <a class="edit" href="{% url 'sleepin:diary_edit' object.pk %}">編集</a>
+            <a class="delete" href="{% url 'sleepin:diary_delete' object.pk %}">削除</a>
+        </div>
     </div>
 </div>
 {% endblock %}
+
 <!--</body>-->
 </html>

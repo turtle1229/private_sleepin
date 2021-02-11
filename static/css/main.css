@@ -1,53 +1,57 @@
-.healthmenu {
-    list-style: none;
-    overflow: hidden;
-    text-align: center;
-    display: table;
-    width: 100%;
-    height: 500px;
-    flex: 1;
+.calendar {
+    font-size: 18px;
+    margin: 0 0 55px 0;
 }
 
-.health_item {
+.calendar img {
+    width: 100px;
+    height: 50px;
+    margin: 15px;
+}
+
+.container {
     display: table-cell;
     text-align: center;
-    vertical-align: middle;
+    flex: 1;
+    list-style: none;
+    font-weight: bold;
+}
+
+.row {
+    margin: 90px;
+}
+
+.menu {
+    list-style: none;
+}
+
+.item {
     font-weight: bold;
     font-size: 18px;
 }
 
-.healthmenu img {
+.menu img {
     width: 150px;
     height: 110px;
     margin: 15px;
 }
 
-.registerhealth_menu {
-    display: table-cell;
-    text-align: center;
-    flex: 1;
-}
-
-.registerhealth_item {
-    margin: 90px;
-}
-
 input {
     width: 350px;
-    height: 23px;
+    height: 30px;
     font-size: 18px;
 }
 
 textarea {
     width: 350px;
-    height: 23px;
+    height: 150px;
     font-size: 18px;
 }
 
 select {
     width: 350px;
-    height: 23px;
-    font-size: 18px;
+    height: 25px;
+    font-size: 20px;
 }
 
 .table {
@@ -58,7 +62,7 @@ select {
     border-spacing: 15px;
 }
 
-.cancel, .regist {
+.cancel, .regist, .edit, .delete {
     font-size: 15px;
     padding: 10px 10px;
     font-weight: bold;
