@@ -27,5 +27,5 @@ DONE!
 
 # Requirements
 |  Python  |  version  
-| -------- | -------- 
+| -------- |
 |  Django  |  version  
