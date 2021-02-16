@@ -23,3 +23,9 @@ REGISTER
 
 DONE!
 ![スクリーンショット 2021-02-15 162240](https://user-images.githubusercontent.com/76725425/107916689-0a212580-6faa-11eb-87f5-7da5000d48d5.jpg)
+
+
+# Requirements
+|  Python  |  version  
+| -------- | -------- 
+|  Django  |  version  
