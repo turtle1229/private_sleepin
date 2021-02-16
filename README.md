@@ -27,7 +27,7 @@ DONE!
 
 # Requirements
 |  Name  |  version  |
-| -------- | --------  |
+| :--------: | :--------:  |
 |    python:    |   3.8.7   |
 |    Django:    |   3.1.4   |
 |  PostgreSQL:  |   13.1   |
