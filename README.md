@@ -26,6 +26,7 @@ DONE!
 
 
 # Requirements
-|  Python  |  version  |
+|  Name  |  version  |
 | -------- | --------  |
-|  Django  |  version  |
+|  python:  |  version  |
+|  Django:  |  version  |
