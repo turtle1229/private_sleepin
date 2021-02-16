@@ -34,4 +34,4 @@ This application created based on the referense book, 「動かして学ぶ！Py
 
 
 # License
-This repository uses the [MIT]https://github.com/turtle1229/private_sleepin/blob/master/LICENSE.
+This repository uses the [MIT](https://github.com/turtle1229/private_sleepin/blob/master/LICENSE).
