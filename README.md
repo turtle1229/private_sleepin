@@ -7,7 +7,7 @@ This application created based on the referense book, 「動かして学ぶ！Py
 
 # Demo
 
-HOWTO
+HOWTO  
 ![Animated GIF-downsized](https://user-images.githubusercontent.com/76725425/109267908-a5898480-784d-11eb-86bc-8c0ee32de3c6.gif)
 
 
