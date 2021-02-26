@@ -14,6 +14,9 @@ This application created based on the referense book, 「動かして学ぶ！Py
 ![Animated GIF-downsized (1)](https://user-images.githubusercontent.com/76725425/109268520-8b03db00-784e-11eb-946b-80a24568fd13.gif)  
 
 
+![Animated GIF-downsized (2)](https://user-images.githubusercontent.com/76725425/109269303-a9b6a180-784f-11eb-9512-87a4716a2048.gif)  
+
+
 
 
 **TOP**
