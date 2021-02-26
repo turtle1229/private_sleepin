@@ -6,11 +6,13 @@ Record sleeptime, meal, health, and diary to check sleep condition.
 This application created based on the referense book, 「動かして学ぶ！Python Django開発入門」 and [this(calendar)](https://www.huiwenteo.com/normal/2018/07/24/django-calendar.html).
 
 # Demo
-**TOP**
 
+HOWTO
 ![Animated GIF-downsized](https://user-images.githubusercontent.com/76725425/109267908-a5898480-784d-11eb-86bc-8c0ee32de3c6.gif)
 
 
+
+**TOP**
 ![スクリーンショット 2021-02-12 143450](https://user-images.githubusercontent.com/76725425/107916033-e8736e80-6fa8-11eb-9b9a-69d61fe59568.jpg)  
 
 
