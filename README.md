@@ -20,6 +20,9 @@ This application created based on the referense book, 「動かして学ぶ！Py
 ![Animated GIF-downsized (3)](https://user-images.githubusercontent.com/76725425/109270008-b7205b80-7850-11eb-9c16-1bf805521141.gif)  
 
 
+![Animated GIF-downsized (4)](https://user-images.githubusercontent.com/76725425/109609137-463db400-7b6e-11eb-8210-181176f2c676.gif)  
+
+
 
 
 
